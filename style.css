@@ -1,0 +1,8 @@
+/* Custom Stylesheet for Seabright Insight */
+
+/* Base Typography Override */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* You can add custom utility classes or overrides below as your site scales */

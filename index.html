@@ -11,132 +11,206 @@
     
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-slate-50 text-slate-900 antialiased selection:bg-indigo-200 selection:text-indigo-900">
+<body class="bg-[#F4F7FA] text-slate-800 antialiased selection:bg-[#00AEEF]/20 selection:text-[#092C5C]">
 
-    <nav class="fixed w-full bg-white/90 backdrop-blur-md z-50 border-b border-slate-200">
+<nav class="fixed w-full bg-[#092C5C]/95 backdrop-blur-md z-50 border-b border-white/10">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="font-bold text-xl tracking-tight text-slate-900">Seabright Insight.</div>
-            <a href="#contact" class="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">Contact</a>
+            <a href="#" class="block hover:opacity-90 transition-opacity">
+                <img src="logo.png" alt="Seabright Insight Logo" class="h-12 w-auto object-contain brightness-0 invert">
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#why-us" class="text-sm font-medium text-slate-300 hover:text-[#00AEEF] transition-colors">Why Seabright</a>
+                <a href="#expertise" class="text-sm font-medium text-slate-300 hover:text-[#00AEEF] transition-colors">What We Build</a>
+                <a href="#case-studies" class="text-sm font-medium text-slate-300 hover:text-[#00AEEF] transition-colors">Our Impact</a>
+                <a href="#pricing" class="text-sm font-medium text-slate-300 hover:text-[#00AEEF] transition-colors">Pricing</a>
+                <a href="#contact" class="bg-[#FFB800] text-[#092C5C] px-4 py-2 rounded-full text-sm font-bold hover:bg-[#e0a200] transition-colors">Let's Talk</a>
+            </div>
+
+            <button id="menu-btn" class="md:hidden text-slate-300 hover:text-white focus:outline-none" aria-label="Toggle Menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-[#092C5C] border-t border-white/10 px-6 py-4 space-y-4 shadow-xl">
+            <a href="#why-us" class="mobile-link block text-base font-medium text-slate-300 hover:text-[#00AEEF]">Why Seabright</a>
+            <a href="#expertise" class="mobile-link block text-base font-medium text-slate-300 hover:text-[#00AEEF]">What We Build</a>
+            <a href="#case-studies" class="mobile-link block text-base font-medium text-slate-300 hover:text-[#00AEEF]">Our Impact</a>
+            <a href="#pricing" class="mobile-link block text-base font-medium text-slate-300 hover:text-[#00AEEF]">Pricing</a>
+            <a href="#contact" class="mobile-link block text-center bg-[#FFB800] text-[#092C5C] py-2 rounded-full font-bold">Let's Talk</a>
         </div>
     </nav>
 
-    <section class="pt-40 pb-24 md:pt-52 md:pb-32 px-6 flex flex-col items-center text-center max-w-4xl mx-auto">
-        <h1 class="text-5xl md:text-7xl font-bold tracking-tight text-slate-900 leading-tight mb-6">
-            See clearly. <br/><span class="text-indigo-600">Act confidently.</span>
-        </h1>
-        <p class="text-xl text-slate-600 mb-10 max-w-2xl leading-relaxed">
-            We are data professionals who live and breathe helping small and mid-sized businesses grow. No corporate jargon, no over-engineered tech stacks—just clear business value derived from your data.
-        </p>
-        <a href="#contact" class="bg-indigo-600 text-white px-8 py-4 rounded-full font-medium text-lg hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-600/20 hover:shadow-indigo-600/40">
-            Let's Talk
-        </a>
+    <section class="relative bg-[#092C5C] text-white pt-40 pb-24 md:pt-48 md:pb-32 px-6 overflow-hidden">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#00AEEF]/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="relative flex flex-col items-center text-center max-w-4xl mx-auto z-10">
+            <div class="mb-8 block">
+                <img src="logo.png" alt="Seabright Insight" class="h-22 md:h-30 w-auto object-contain brightness-0 invert mx-auto drop-shadow-md">
+            </div>
+
+            <h1 class="text-5xl md:text-7xl font-bold tracking-tight text-white leading-tight mb-6">
+                See clearly. <br/><span class="text-[#00AEEF]">Act confidently.</span>
+            </h1>
+            <p class="text-xl text-slate-300 mb-10 max-w-2xl leading-relaxed">
+                We are a small, collaborative team of data professionals who help small and mid-sized businesses grow. No corporate jargon, no over-engineered tech stacks—just clear business value derived from your actual metrics.
+            </p>
+            <a href="#contact" class="bg-[#FFB800] text-[#092C5C] px-8 py-4 rounded-full font-bold text-lg hover:bg-[#e0a200] transition-all shadow-lg shadow-[#FFB800]/20 hover:shadow-[#FFB800]/40 tracking-wide">
+                Work With Our Team
+            </a>
+        </div>
     </section>
 
-    <section class="py-24 bg-white px-6">
+    <section id="why-us" class="py-24 bg-[#F4F7FA] px-6">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl font-bold mb-16 text-center">Why Work With Us?</h2>
+            <h2 class="text-3xl font-bold mb-4 text-center text-[#092C5C]">Real Value, Straightforward Execution</h2>
+            <p class="text-center text-slate-500 mb-16 max-w-xl mx-auto">We cut through the analytics noise to focus strictly on what changes your bottom line.</p>
+            
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100">
-                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                
+                <div class="bg-white p-8 rounded-3xl border-t-4 border-[#0073B7] shadow-sm shadow-[#092C5C]/5 flex flex-col justify-between">
+                    <div>
+                        <div class="h-14 flex items-center space-x-2 mb-6">
+                            <div class="bg-[#00AEEF]/10 text-[#00AEEF] px-3 py-1.5 rounded-lg text-xs font-mono font-bold">Manual Task</div>
+                            <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                            <div class="bg-[#0073B7] text-white px-3 py-1.5 rounded-lg text-xs font-mono font-bold shadow-sm">Automated</div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-[#092C5C]">Save hours every week</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            We map out and <strong>automate your repetitive administrative pipelines</strong> and data entry tasks so you can reallocate your energy toward running your business.
+                        </p>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3">Save hours every week</h3>
-                    <p class="text-slate-600 leading-relaxed">Automate repetitive admin and operational tasks so you can focus on running your business.</p>
                 </div>
-                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100">
-                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+
+                <div class="bg-white p-8 rounded-3xl border-t-4 border-[#0073B7] shadow-sm shadow-[#092C5C]/5 flex flex-col justify-between">
+                    <div>
+                        <div class="h-14 flex items-end space-x-1.5 mb-6 pb-1">
+                            <div class="w-5 bg-slate-200 h-6 rounded-sm"></div>
+                            <div class="w-5 bg-slate-200 h-8 rounded-sm"></div>
+                            <div class="w-5 bg-[#0073B7] h-12 rounded-sm relative">
+                                <span class="absolute -top-6 left-1/2 -translate-x-1/2 bg-[#00AEEF]/20 text-[#0073B7] text-[10px] font-bold px-1 rounded">+42%</span>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-[#092C5C]">Make decisions confidently</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            Stop operating on gut feeling. We implement <strong>practical analytics and AI tools</strong> grounded tightly in your historical business metrics to find new revenue targets.
+                        </p>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3">Make smarter decisions</h3>
-                    <p class="text-slate-600 leading-relaxed">Move faster using practical data insights and AI support grounded in your actual business metrics.</p>
                 </div>
-                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100">
-                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+
+                <div class="bg-white p-8 rounded-3xl border-t-4 border-[#0073B7] shadow-sm shadow-[#092C5C]/5 flex flex-col justify-between">
+                    <div>
+                        <div class="h-14 flex flex-col justify-center space-y-2 mb-6 max-w-[170px]">
+                            <div class="flex items-center">
+                                <div class="flex-1 bg-slate-200 h-1.5 rounded-full overflow-hidden">
+                                    <div class="bg-slate-300 h-full w-5/12"></div>
+                                </div>
+                                <span class="w-7 text-right text-[10px] font-mono font-bold text-slate-400">1x</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="flex-1 bg-slate-200 h-1.5 rounded-full overflow-hidden">
+                                    <div class="bg-slate-300 h-full w-7/12"></div>
+                                </div>
+                                <span class="w-7 text-right text-[10px] font-mono font-bold text-slate-400">1x</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="flex-1 bg-slate-100 h-2 rounded-full overflow-hidden border border-[#FFB800]/20">
+                                    <div class="bg-[#FFB800] h-full w-11/12 rounded-full shadow-sm"></div>
+                                </div>
+                                <span class="w-7 text-right text-[10px] font-mono font-bold text-[#b58200]">2x</span>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-[#092C5C]">Outpace your market</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            We build modern, <strong>hyper-efficient workflows</strong> that your local competitors don't know how to use yet, creating a distinct operating advantage.
+                        </p>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3">Stand out in your market</h3>
-                    <p class="text-slate-600 leading-relaxed">Adopt modern, efficient ways of working that your competitors aren't using yet.</p>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <section class="py-24 bg-slate-900 text-white px-6">
+    <section class="py-24 bg-[#061F42] text-white px-6">
         <div class="max-w-4xl mx-auto text-center mb-16">
-            <blockquote class="text-3xl md:text-4xl font-light text-slate-300 leading-snug">
-                "Data and AI should help everyone, <br class="hidden md:block"/>not just the big tech companies."
+            <blockquote class="text-3xl md:text-4xl font-light text-slate-200 leading-snug">
+                "We believe data visibility and automation should help local operations, <br class="hidden md:block"/>not just enterprise tech giants."
             </blockquote>
         </div>
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div class="border-t border-slate-700 pt-6">
-                <h4 class="text-lg font-semibold mb-2 text-indigo-400">Tailored to You</h4>
-                <p class="text-slate-400 text-sm leading-relaxed">We deliver results that are unique to your specific business challenges.</p>
+            <div class="border-t border-white/10 pt-6">
+                <h4 class="text-lg font-semibold mb-2 text-[#00AEEF]">Bespoke Architecture</h4>
+                <p class="text-slate-400 text-sm leading-relaxed">We develop data systems built entirely around your individual business processes.</p>
             </div>
-            <div class="border-t border-slate-700 pt-6">
-                <h4 class="text-lg font-semibold mb-2 text-indigo-400">Resource Smart</h4>
-                <p class="text-slate-400 text-sm leading-relaxed">We show you how to use tools that are already available or completely free.</p>
+            <div class="border-t border-white/10 pt-6">
+                <h4 class="text-lg font-semibold mb-2 text-[#00AEEF]">Resource-Conscious</h4>
+                <p class="text-slate-400 text-sm leading-relaxed">We focus on optimizing your existing software stack or utilizing free open-source tools first.</p>
             </div>
-            <div class="border-t border-slate-700 pt-6">
-                <h4 class="text-lg font-semibold mb-2 text-indigo-400">Sustainable Value</h4>
-                <p class="text-slate-400 text-sm leading-relaxed">We leave you with the capabilities and confidence to use data effectively on your own.</p>
+            <div class="border-t border-white/10 pt-6">
+                <h4 class="text-lg font-semibold mb-2 text-[#00AEEF]">Full Handover</h4>
+                <p class="text-slate-400 text-sm leading-relaxed">We prioritize knowledge transfers, making sure your internal team fully owns the software when we exit.</p>
             </div>
-            <div class="border-t border-slate-700 pt-6">
-                <h4 class="text-lg font-semibold mb-2 text-indigo-400">No Jargon</h4>
-                <p class="text-slate-400 text-sm leading-relaxed">We translate technical complexity into clear, actionable business value.</p>
+            <div class="border-t border-white/10 pt-6">
+                <h4 class="text-lg font-semibold mb-2 text-[#00AEEF]">Zero Posturing</h4>
+                <p class="text-slate-400 text-sm leading-relaxed">We translate highly technical models into transparent operational realities you understand completely.</p>
             </div>
         </div>
     </section>
 
-    <section class="py-24 bg-white px-6 border-b border-slate-200">
+    <section id="expertise" class="py-24 bg-white px-6 border-b border-slate-100">
         <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20">
             <div>
-                <h2 class="text-3xl font-bold mb-6">Our Expertise</h2>
-                <p class="text-lg text-slate-600 mb-8 leading-relaxed">We bring deep roots in data science and statistics to help you structure, automate, and leverage your numbers.</p>
+                <h2 class="text-3xl font-bold mb-6 text-[#092C5C]">What We Build For You</h2>
+                <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                    Our team blends a deep background in <strong>applied statistics and system automation</strong> to cleanly organize and maximize your business operational output.
+                </p>
                 <ul class="space-y-4">
                     <li class="flex items-center text-slate-700">
-                        <svg class="w-5 h-5 text-indigo-600 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        Leadership, strategy & governance
+                        <svg class="w-5 h-5 text-[#00AEEF] mr-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        Operational data strategy and secure governance
                     </li>
                     <li class="flex items-center text-slate-700">
-                        <svg class="w-5 h-5 text-indigo-600 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        Data Analytics and AI integrations
+                        <svg class="w-5 h-5 text-[#00AEEF] mr-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        Custom internal analytics platforms and automated reporting
                     </li>
                     <li class="flex items-center text-slate-700">
-                        <svg class="w-5 h-5 text-indigo-600 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        Custom survey design
+                        <svg class="w-5 h-5 text-[#00AEEF] mr-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        Targeted AI integrations and survey analysis tools
                     </li>
                 </ul>
             </div>
 
             <div>
-                <h2 class="text-3xl font-bold mb-8">Our Approach</h2>
+                <h2 class="text-3xl font-bold mb-8 text-[#092C5C]">How We Work Together</h2>
                 <div class="space-y-8 relative before:absolute before:inset-0 before:ml-4 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-200 before:to-transparent">
                     <div class="relative flex items-start">
-                        <div class="bg-indigo-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm shrink-0 z-10 mr-6">1</div>
+                        <div class="bg-[#0073B7] text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm shrink-0 z-10 mr-6">1</div>
                         <div>
-                            <h4 class="text-lg font-semibold">Discover</h4>
-                            <p class="text-slate-600 mt-1">We take the time to deeply understand your data, goals, and challenges.</p>
+                            <h4 class="text-lg font-semibold text-[#092C5C]">Discover</h4>
+                            <p class="text-slate-600 mt-1">We jump straight into your current systems to isolate concrete inefficiencies and blockages.</p>
                         </div>
                     </div>
                     <div class="relative flex items-start">
-                        <div class="bg-indigo-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm shrink-0 z-10 mr-6">2</div>
+                        <div class="bg-[#0073B7] text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm shrink-0 z-10 mr-6">2</div>
                         <div>
-                            <h4 class="text-lg font-semibold">Design</h4>
-                            <p class="text-slate-600 mt-1">We build a bespoke solution tailored specifically to your operational context.</p>
+                            <h4 class="text-lg font-semibold text-[#092C5C]">Design</h4>
+                            <p class="text-slate-600 mt-1">Our team drafts a definitive blueprint configured specifically to your day-to-day operations.</p>
                         </div>
                     </div>
                     <div class="relative flex items-start">
-                        <div class="bg-indigo-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm shrink-0 z-10 mr-6">3</div>
+                        <div class="bg-[#0073B7] text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm shrink-0 z-10 mr-6">3</div>
                         <div>
-                            <h4 class="text-lg font-semibold">Deliver</h4>
-                            <p class="text-slate-600 mt-1">We implement the solution with hands-on, practical support.</p>
+                            <h4 class="text-lg font-semibold text-[#092C5C]">Deliver</h4>
+                            <p class="text-slate-600 mt-1">We actively deploy the changes side-by-side with your staff, minimizing runtime surprises.</p>
                         </div>
                     </div>
                     <div class="relative flex items-start">
-                        <div class="bg-slate-300 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm shrink-0 z-10 mr-6">4</div>
+                        <div class="bg-slate-200 text-slate-500 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm shrink-0 z-10 mr-6">4</div>
                         <div>
-                            <h4 class="text-lg font-semibold">Embed</h4>
-                            <p class="text-slate-600 mt-1">We transfer the knowledge directly to your team so you fully own it.</p>
+                            <h4 class="text-lg font-semibold text-slate-400">Embed</h4>
+                            <p class="text-slate-500 mt-1">We run a hands-on knowledge transfer so your team knows how to adapt the system without us.</p>
                         </div>
                     </div>
                 </div>
@@ -144,34 +218,60 @@
         </div>
     </section>
 
-    <section class="py-24 bg-slate-50 px-6">
+    <section id="case-studies" class="py-24 bg-[#F4F7FA] px-6">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl font-bold mb-12 text-center">Proven Impact for Local Businesses</h2>
+            <h2 class="text-3xl font-bold mb-4 text-center text-[#092C5C]">Proven Regional Impact</h2>
+            <p class="text-center text-slate-500 mb-12 max-w-xl mx-auto">See how our collaborative small team actively delivers value to local enterprises across the South Coast.</p>
+            
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 
-                <div class="bg-white rounded-3xl p-8 shadow-sm border border-slate-200 flex flex-col h-full">
-                    <div class="mb-6">
-                        <span class="inline-block px-3 py-1 bg-indigo-50 text-indigo-700 text-xs font-semibold rounded-full uppercase tracking-wider mb-4">Retail & E-commerce</span>
-                        <h3 class="text-2xl font-bold mb-2">Online Toy & Crafts Retailer</h3>
-                    </div>
-                    <div class="mb-6 flex-grow">
-                        <h4 class="font-semibold text-slate-900 mb-2">The Challenge</h4>
-                        <p class="text-slate-600 text-sm mb-6">Needed to break into the education and children's activity market.</p>
-                        <h4 class="font-semibold text-slate-900 mb-2">Our Impact</h4>
-                        <p class="text-slate-600 text-sm">AI-powered market analysis shaped a targeted Halloween campaign to capture market share and drive sales, while coaching the team to optimize and validate AI outputs.</p>
+                <div class="bg-white rounded-3xl p-8 shadow-sm shadow-[#092C5C]/5 border border-slate-100 flex flex-col h-full justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <div>
+                                <span class="inline-block px-3 py-1 bg-[#00AEEF]/10 text-[#0073B7] text-xs font-semibold rounded-full uppercase tracking-wider mb-3">Retail & E-commerce</span>
+                                <h3 class="text-2xl font-bold text-[#092C5C]">Online Toy & Crafts Retailer</h3>
+                            </div>
+                            <div class="bg-[#00AEEF]/10 text-[#0073B7] px-3 py-2 rounded-2xl text-center shrink-0">
+                                <div class="text-xs uppercase font-bold text-slate-500">Campaign</div>
+                                <div class="text-lg font-black font-mono">Optimized</div>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-sm uppercase tracking-wide">The Objective</h4>
+                                <p class="text-slate-600 text-sm">Expand core sales footprints into educational and organized youth markets.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-sm uppercase tracking-wide">Our Execution</h4>
+                                <p class="text-slate-600 text-sm">We ran a competitor profile sweep to construct a structured seasonal campaign. Crucially, we coached their direct management on how to validate and modify model findings long-term.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="bg-white rounded-3xl p-8 shadow-sm border border-slate-200 flex flex-col h-full">
-                    <div class="mb-6">
-                        <span class="inline-block px-3 py-1 bg-indigo-50 text-indigo-700 text-xs font-semibold rounded-full uppercase tracking-wider mb-4">Healthcare & Wellness</span>
-                        <h3 class="text-2xl font-bold mb-2">Local Pilates Instructor</h3>
-                    </div>
-                    <div class="mb-6 flex-grow">
-                        <h4 class="font-semibold text-slate-900 mb-2">The Challenge</h4>
-                        <p class="text-slate-600 text-sm mb-6">Needed to find the best opportunity to launch mat classes in Brighton's crowded wellness market.</p>
-                        <h4 class="font-semibold text-slate-900 mb-2">Our Impact</h4>
-                        <p class="text-slate-600 text-sm">Provided AI-driven competitor and venue analysis within a 5-mile radius, uncovering market gaps and delivering a full launch strategy covering pricing, scheduling, and marketing.</p>
+                <div class="bg-white rounded-3xl p-8 shadow-sm shadow-[#092C5C]/5 border border-slate-100 flex flex-col h-full justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <div>
+                                <span class="inline-block px-3 py-1 bg-[#00AEEF]/10 text-[#0073B7] text-xs font-semibold rounded-full uppercase tracking-wider mb-3">Healthcare & Wellness</span>
+                                <h3 class="text-2xl font-bold text-[#092C5C]">Local Pilates Instructor</h3>
+                            </div>
+                            <div class="bg-[#FFB800]/20 text-[#b58200] px-3 py-2 rounded-2xl text-center shrink-0">
+                                <div class="text-xs uppercase font-bold text-slate-600">Radius Gap</div>
+                                <div class="text-lg font-black font-mono">5-Mile</div>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-sm uppercase tracking-wide">The Objective</h4>
+                                <p class="text-slate-600 text-sm">Identify highly profitable launch zones for fresh mat spaces inside a saturated urban environment.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-sm uppercase tracking-wide">Our Execution</h4>
+                                <p class="text-slate-600 text-sm">Our team deployed spatial competitor and localized traffic analysis to uncover underserved regional sectors, converting our findings into an immediate launch framework covering pricing matrices and schedules.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -179,45 +279,44 @@
         </div>
     </section>
 
-    <section class="py-24 bg-white px-6">
+    <section id="pricing" class="py-24 bg-white px-6">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl font-bold mb-4 text-center">Flexible Engagement Models</h2>
-            <p class="text-center text-slate-600 mb-16 max-w-2xl mx-auto">Transparent pricing designed to fit the reality of running a small or mid-sized business.</p>
+            <h2 class="text-3xl font-bold mb-4 text-center text-[#092C5C]">Transparent Frameworks</h2>
+            <p class="text-center text-slate-500 mb-16 max-w-2xl mx-auto">Clear pricing metrics constructed specifically to scale safely with the cash flows of a growing business.</p>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
                 
-                <div class="bg-slate-50 rounded-3xl p-8 border border-slate-200 flex flex-col">
-                    <h3 class="text-xl font-bold mb-2">Hourly Rate</h3>
-                    <div class="text-3xl font-bold text-slate-900 mb-6">£75 <span class="text-sm font-normal text-slate-500">/hour</span></div>
-                    <p class="text-slate-600 text-sm mb-6 border-b border-slate-200 pb-6 flex-grow">Best for specialist expertise on demand, one-off projects, and no long-term commitment.</p>
-                    <ul class="space-y-3 text-sm text-slate-700">
-                        <li class="flex items-start"><svg class="w-5 h-5 text-indigo-600 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Fast-turnaround surveys</li>
-                        <li class="flex items-start"><svg class="w-5 h-5 text-indigo-600 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Custom reporting</li>
-                        <li class="flex items-start"><svg class="w-5 h-5 text-indigo-600 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> On-demand analytics</li>
+                <div class="bg-[#F4F7FA] rounded-3xl p-8 border border-slate-200/60 flex flex-col">
+                    <h3 class="text-xl font-bold mb-2 text-[#092C5C]">Hourly Rate</h3>
+                    <div class="text-3xl font-bold text-[#0073B7] mb-6">£75 <span class="text-sm font-normal text-slate-500">/hour</span></div>
+                    <p class="text-slate-600 text-sm mb-6 border-b border-slate-200 pb-6 flex-grow">Perfect for micro-consults, tactical custom code reviews, or ad-hoc technical troubleshooting with our specialists.</p>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li class="flex items-start"><svg class="w-5 h-5 text-[#00AEEF] mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Fast-turnaround datasets</li>
+                        <li class="flex items-start"><svg class="w-5 h-5 text-[#00AEEF] mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Targeted scripting edits</li>
+                        <li class="flex items-start"><svg class="w-5 h-5 text-[#00AEEF] mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Infrastructure diagnostics</li>
                     </ul>
                 </div>
 
-                <div class="bg-indigo-900 rounded-3xl p-8 border border-indigo-700 shadow-xl shadow-indigo-900/20 text-white flex flex-col relative transform md:-translate-y-4">
-                    <div class="absolute top-0 right-8 -translate-y-1/2 bg-indigo-500 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Most Popular</div>
-                    <h3 class="text-xl font-bold mb-2">A la Carte AI Project</h3>
-                    <div class="text-3xl font-bold mb-6">£500 <span class="text-sm font-normal text-indigo-300">/project</span></div>
-                    <p class="text-indigo-200 text-sm mb-6 border-b border-indigo-700/50 pb-6 flex-grow">Best for solving up to 5 specific business challenges from a pre-defined list.</p>
-                    <ul class="space-y-3 text-sm text-indigo-100">
-                        <li class="flex items-start"><svg class="w-5 h-5 text-indigo-400 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Fixed fee, no surprises</li>
-                        <li class="flex items-start"><svg class="w-5 h-5 text-indigo-400 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Pre-defined deliverables</li>
-                        <li class="flex items-start"><svg class="w-5 h-5 text-indigo-400 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Clear timeline</li>
-                        <li class="flex items-start"><svg class="w-5 h-5 text-indigo-400 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Half-day handover session</li>
+                <div class="bg-[#092C5C] rounded-3xl p-8 border border-[#0073B7] shadow-xl shadow-[#092C5C]/20 text-white flex flex-col relative transform md:-translate-y-4">
+                    <div class="absolute top-0 right-8 -translate-y-1/2 bg-[#FFB800] text-[#092C5C] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Most Popular</div>
+                    <h3 class="text-xl font-bold mb-2 text-white">A la Carte AI Project</h3>
+                    <div class="text-3xl font-bold text-[#FFB800] mb-6">£500 <span class="text-sm font-normal text-slate-300">/project</span></div>
+                    <p class="text-slate-300 text-sm mb-6 border-b border-white/10 pb-6 flex-grow">We address up to five explicit business operational roadblocks from our vetted automation playbook.</p>
+                    <ul class="space-y-3 text-sm text-slate-200">
+                        <li class="flex items-start"><svg class="w-5 h-5 text-[#FFB800] mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Fixed cost boundaries</li>
+                        <li class="flex items-start"><svg class="w-5 h-5 text-[#FFB800] mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Dedicated workflow handovers</li>
+                        <li class="flex items-start"><svg class="w-5 h-5 text-[#FFB800] mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Accelerated milestone pacing</li>
                     </ul>
                 </div>
 
-                <div class="bg-slate-50 rounded-3xl p-8 border border-slate-200 flex flex-col">
-                    <h3 class="text-xl font-bold mb-2">Monthly Retainer</h3>
-                    <div class="text-3xl font-bold text-slate-900 mb-6">£1k+ <span class="text-sm font-normal text-slate-500">/month</span></div>
-                    <p class="text-slate-600 text-sm mb-6 border-b border-slate-200 pb-6 flex-grow">Best for ongoing support, continuous improvement, and priority access to our team.</p>
-                    <ul class="space-y-3 text-sm text-slate-700">
-                        <li class="flex items-start"><svg class="w-5 h-5 text-indigo-600 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Min 14 billable hours/mo</li>
-                        <li class="flex items-start"><svg class="w-5 h-5 text-indigo-600 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Flexible scope evolution</li>
-                        <li class="flex items-start"><svg class="w-5 h-5 text-indigo-600 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Regular roadmap reviews</li>
+                <div class="bg-[#F4F7FA] rounded-3xl p-8 border border-slate-200/60 flex flex-col">
+                    <h3 class="text-xl font-bold mb-2 text-[#092C5C]">Monthly Retainer</h3>
+                    <div text-3xl class="text-3xl font-bold text-[#0073B7] mb-6">£1k+ <span class="text-sm font-normal text-slate-500">/month</span></div>
+                    <p class="text-slate-600 text-sm mb-6 border-b border-slate-200 pb-6 flex-grow">Embed our technical team directly into your ongoing operations for structured scaling and regular software maintenance.</p>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li class="flex items-start"><svg class="w-5 h-5 text-[#00AEEF] mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Guaranteed development runway</li>
+                        <li class="flex items-start"><svg class="w-5 h-5 text-[#00AEEF] mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Priority deployment lines</li>
+                        <li class="flex items-start"><svg class="w-5 h-5 text-[#00AEEF] mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Ongoing strategic check-ins</li>
                     </ul>
                 </div>
 
@@ -225,11 +324,11 @@
         </div>
     </section>
 
-    <footer id="contact" class="py-24 bg-indigo-50 px-6 text-center border-t border-indigo-100">
+    <footer id="contact" class="py-24 bg-[#051B39] px-6 text-center border-t border-white/5">
         <div class="max-w-3xl mx-auto">
-            <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-8 tracking-tight">Ready to turn your data into your competitive advantage?</h2>
-            <p class="text-xl text-slate-600 mb-12">Drop us a line to schedule a chat. No hard sales pitch, just practical solutions.</p>
-            <a href="mailto:info@seabright-insight.co.uk" class="inline-flex items-center justify-center bg-slate-900 text-white px-8 py-4 rounded-full font-medium text-lg hover:bg-slate-800 transition-colors shadow-lg">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-8 tracking-tight">Ready to integrate your data into your growth engine?</h2>
+            <p class="text-xl text-slate-300 mb-12">Reach out to our team directly to establish a clear solution framework. No high-pressure sales teams, just engineering focus.</p>
+            <a href="mailto:info@seabright-insight.co.uk" class="inline-flex items-center justify-center bg-[#FFB800] text-[#092C5C] px-8 py-4 rounded-full font-bold text-lg hover:bg-[#e0a200] transition-colors shadow-lg shadow-[#FFB800]/10">
                 <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                 info@seabright-insight.co.uk
             </a>
@@ -238,6 +337,29 @@
             &copy; 2026 Seabright Insight. All rights reserved.
         </div>
     </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+            } else {
+                menuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+            }
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+            });
+        });
+    </script>
 
 </body>
 </html>
